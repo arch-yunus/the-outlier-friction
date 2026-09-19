@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/banner.jpg" alt="The Outlier Friction Banner" width="100%" />
+</div>
+
 # The Outlier Friction: Mikro-Topluluklarda Vasatlık Konsensüsü, Uç Değer Tasfiyesi ve Yatay Şiddetin Anatomisi
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -71,6 +75,11 @@ René Girard'ın mimetik teori çözümlemesinde vurguladığı üzere, grubun k
 ---
 
 ## 2. Sosyolojik Altyapı: Sınır Bekçiliği, Kurban ve Yatay Panoptikon
+
+<div align="center">
+  <img src="assets/mimetic_scapegoat.jpg" alt="Mimetik Kurban ve Akran Dinamikleri" width="85%" />
+  <p><em>Şekil 1: René Girard'ın Mimetik Kurban Mekanizması ve Mikro-Topluluklarda Odaklanan Akran Baskısı</em></p>
+</div>
 
 Topluluklar sınırlarını kanun maddeleriyle değil, cezalandırdıkları kurbanlarla çizer. Sosyolojik açıdan sapkınlık (*deviance*), grubun kendi ahlakını ve aidiyetini tescil ettiği kurucu bir ritüeldir.
 
@@ -181,6 +190,11 @@ Mikro-topluluk simülasyonundaki karşılığı şudur:
 
 ## 7. Sessiz Şiddetin Biyolojisi: Ostracism ve Nörolojik İmha (fMRI / dACC)
 
+<div align="center">
+  <img src="assets/ostracism_dynamics.jpg" alt="Ostracism, Kara Koyun ve İletişim Kopuşu" width="85%" />
+  <p><em>Şekil 2: Stanley Schachter İletişimsel İtlaf Protokolü, Ağ İzolasyonu ve dACC Nörolojik Ağrı Aktivasyonu</em></p>
+</div>
+
 Fiziksel şiddet kanıt üretir, resmi disiplin süreçlerini tetikler ve faili görünür kılar. Bu yüzden kapalı mikro-topluluklar en sinsi, delilsiz ve cezai yaptırımı bulunmayan silaha yönelir: **Sosyal Aforoz (Ostracism).**
 
 > *"Ostracism, fiziksel bir yara açmaz; ancak bireyin dört temel varoluşsal ihtiyacını doğrudan baltalar: Ait olma hissi, kontrol algısı, özsaygı ve anlamlı bir varoluşa sahip olma inancı. Bir mekânda hiç kimsenin sizinle göz teması kurmaması, selamınızın havada bırakılması veya varlığınızın yok sayılması, açık bir hakaretten katbekat daha yıkıcıdır; çünkü kurbanın mevcudiyetini bütünüyle inkar eder."*  
@@ -199,6 +213,11 @@ Bu eylem soyut bir rahatsızlık yaratmanın ötesinde, sinir sistemine yönelmi
 ---
 
 ## 8. Eşitler Arası Asimetri: Yatay Şiddet ve Kolektif Gazlama (Mob-Gaslighting)
+
+<div align="center">
+  <img src="assets/horizontal_panopticon.jpg" alt="Yatay Panoptikon ve Karşılıklı Denetim Ağı" width="85%" />
+  <p><em>Şekil 3: Michel Foucault'nun Yatay Panoptikon Çerçevesi — Eşitler Arası Karşılıklı Gözetim ve Normatif İnfaz Ağı</em></p>
+</div>
 
 Klasik iş yeri mobbingi (Leymann modeli) genellikle dikey hiyerarşiyi modeller: yöneticinin astını ezmesi. Oysa yatay şiddet (*lateral/horizontal violence*), resmi unvanların ve yetkilerin eşit olduğu düzlemde gerçekleşir.
 
@@ -253,6 +272,11 @@ Grup, bireyi sistematik olarak tecrit eder; birey bu duruma tepki gösterdiğind
 ---
 
 ## 10. Matematiksel Modelleme, Ağ Teorisi ve Oyun Kuramı
+
+<div align="center">
+  <img src="assets/agent_simulation_matrix.jpg" alt="Ajan Tabanlı Modelleme ve Oyun Kuramı Matrisi" width="85%" />
+  <p><em>Şekil 4: Ajan Tabanlı Sosyal Simülasyon, Faz Uzayı Yörüngeleri ve Oyun Kuramı Çözümleme Matrisi</em></p>
+</div>
 
 ### 10.1 Schachter Dinamik Diferansiyel İletişim Modeli
 Bir mikro-topluluğun sapkın üyeye yönelttiği anlık iletişim yoğunluğu $C(t)$:

@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/banner.jpg" alt="The Outlier Friction Banner" width="100%" />
+</div>
+
 # The Outlier Friction: Mediocrity Consensus, Outlier Liquidation, and Horizontal Violence in Micro-Communities
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -71,6 +75,11 @@ As René Girard demonstrates in his mimetic theory:
 ---
 
 ## 2. Sociological Foundations: Boundary Maintenance, Scapegoating & Horizontal Panopticism
+
+<div align="center">
+  <img src="assets/mimetic_scapegoat.jpg" alt="Mimetic Scapegoat Dynamics" width="85%" />
+  <p><em>Figure 1: René Girard's Mimetic Scapegoating & Converging Peer Hostility in Closed Basins</em></p>
+</div>
 
 Collectives establish and maintain boundaries not by enumerating abstract rules, but through the sacrificial rituals performed upon transgressors. Deviance is an indispensable social mechanism for social cohesion.
 
@@ -176,6 +185,11 @@ Expended Communication Energy C(t)
 
 ## 7. The Biology of Silent Violence: Ostracism and Neurological Annihilation (fMRI / dACC)
 
+<div align="center">
+  <img src="assets/ostracism_dynamics.jpg" alt="Social Ostracism and Network Severance" width="85%" />
+  <p><em>Figure 2: Stanley Schachter Communication Cutoff, Black Sheep Mechanism & dACC Neurological Pain Activation</em></p>
+</div>
+
 Physical violence leaves forensic proof and triggers formal sanctions. Closed micro-communities therefore employ the ultimate invisible weapon: **Social Ostracism.**
 
 > *"Ostracism does not leave visible scars, yet it directly undermines four fundamental existential needs: belonging, self-esteem, control, and meaningful existence. Being ignored and treated as invisible is far more devastating than explicit hostility because it denies the target's ontological existence."*  
@@ -192,6 +206,11 @@ Williams (2007) distinguishes three temporal stages of ostracism:
 ---
 
 ## 8. Asymmetry Among Equals: Horizontal Violence and Mob-Gaslighting
+
+<div align="center">
+  <img src="assets/horizontal_panopticon.jpg" alt="Horizontal Panopticon and Peer Surveillance Grid" width="85%" />
+  <p><em>Figure 3: Michel Foucault's Horizontal Panopticism — Lateral Surveillance Grid and Peer Conformity Enforcement</em></p>
+</div>
 
 Traditional mobbing frameworks (e.g., Leymann, 1996) focus on vertical hierarchies: supervisors abusing subordinates. Horizontal violence occurs strictly between peers of equal formal standing.
 
@@ -233,6 +252,11 @@ Traditional mobbing frameworks (e.g., Leymann, 1996) focus on vertical hierarchi
 ---
 
 ## 10. Mathematical Modeling, Network Theory & Game Theory
+
+<div align="center">
+  <img src="assets/agent_simulation_matrix.jpg" alt="Agent-Based Social Simulation & Game Theory Analytics" width="85%" />
+  <p><em>Figure 4: Multi-Agent Interaction Graph, Phase Space Trajectories & Game Theory Payoff Matrix Analytics</em></p>
+</div>
 
 ### 10.1 Schachter Differential Communication Model
 Instantaneous communicative intensity $C(t)$ directed by the group toward a deviant:
