@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you cite this monograph or use the simulation software, please cite it as below."
+authors:
+  - family-names: "The Outlier Friction Contributors"
+title: "The Outlier Friction: Mediocrity Consensus, Outlier Liquidation, and Horizontal Violence in Micro-Communities"
+version: 1.0.0
+date-released: 2026-09-19
+url: "https://github.com/arch-yunus/the-outlier-friction"
+license: MIT
+keywords:
+  - sociology
+  - social-psychology
+  - ostracism
+  - horizontal-violence
+  - black-sheep-effect
+  - schachter-model
+  - agent-based-modeling
+  - game-theory

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Outlier Friction — Simulation, Theory & Diagnostic Platform</title>
+  <meta name="description" content="An agent-based simulation and theoretical monograph modeling mediocrity consensus, outlier liquidation, and horizontal violence in closed micro-communities.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-symbol">&#9670;</span>
+        <span class="brand-title">THE OUTLIER FRICTION</span>
+        <span class="brand-tag">v1.0</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#simulator" class="active" data-nav="sim">Simulation Studio</a>
+        <a href="#matrix" data-nav="matrix">Phase Matrix</a>
+        <a href="#gametheory" data-nav="game">Game Theory</a>
+        <a href="#ofi" data-nav="ofi">OFI Diagnostic</a>
+        <a href="#monograph" data-nav="paper">Monograph</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" title="Toggle Dark/Light Mode">&#9790;</button>
+        <button id="lang-toggle" class="btn-lang" title="Switch Language">TR / EN</button>
+        <a href="https://github.com/arch-yunus/the-outlier-friction" target="_blank" class="btn-github" title="GitHub Repository">
+          <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">Agent-Based Social Simulation & Game-Theoretic Framework</div>
+      <h1 class="hero-title">The Anatomy of Mediocrity Consensus & Outlier Liquidation</h1>
+      <p class="hero-subtitle">
+        How closed micro-communities detect, ridicule, ostracize, and liquidate high-striving individuals to safeguard collective mediocrity and minimum effort norms.
+      </p>
+      <div class="hero-cta">
+        <a href="#simulator" class="btn-primary">Launch Live Simulator &rarr;</a>
+        <a href="#ofi" class="btn-secondary">Take OFI Diagnostic Test</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container -->
+  <main class="main-wrapper">
+    <!-- 1. Simulator Section -->
+    <section id="simulator" class="content-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-num">01</span>
+          <h2>Interactive Micro-Community Simulation</h2>
+        </div>
+        <p class="section-desc">Real-time multi-agent physics simulating Schachter communication surges, Black Sheep targeting, edge pruning, and neurological dACC stress accumulation.</p>
+      </div>
+
+      <div class="sim-dashboard">
+        <!-- Canvas Viewport -->
+        <div class="sim-viewport-card">
+          <div class="sim-viewport-header">
+            <div class="phase-display">
+              <span class="phase-label">ACTIVE PHASE:</span>
+              <span id="current-phase-badge" class="badge-phase phase-1">Phase 1: Radar</span>
+            </div>
+            <div class="telemetry-pill">
+              <span>Step: <strong id="step-counter">0</strong>/60</span>
+              <span>Edges: <strong id="edge-counter">0</strong></span>
+            </div>
+          </div>
+          <div class="canvas-container">
+            <canvas id="simCanvas" width="760" height="460"></canvas>
+            <div id="agent-tooltip" class="agent-tooltip hidden"></div>
+          </div>
+          <div class="sim-legend">
+            <span class="legend-item"><span class="dot dot-peer"></span> Ingroup Peers (Conformists)</span>
+            <span class="legend-item"><span class="dot dot-outlier"></span> Outlier (High Striver)</span>
+            <span class="legend-item"><span class="dot dot-ostracized"></span> Ostracized / Exited</span>
+            <span class="legend-item"><span class="line line-active"></span> Active Peer Link</span>
+            <span class="legend-item"><span class="line line-severed"></span> Severed Bond</span>
+          </div>
+        </div>
+
+        <!-- Simulation Controls & Analytics -->
+        <div class="sim-controls-panel">
+          <!-- Playback Controls -->
+          <div class="control-box">
+            <label class="box-title">Simulation Controls</label>
+            <div class="btn-group-grid">
+              <button id="btn-play" class="btn-ctrl btn-accent">&#9654; Run</button>
+              <button id="btn-step" class="btn-ctrl">&#9658;&#10072; Step</button>
+              <button id="btn-reset" class="btn-ctrl">&#8635; Reset</button>
+            </div>
+            <div class="param-row mt-2">
+              <label>Preset Scenarios:</label>
+              <select id="scenario-select" class="select-input">
+                <option value="academic">University Thesis Lab (High Envy)</option>
+                <option value="corporate">Corporate Department (Status Anxiety)</option>
+                <option value="creative">Creative Workshop (High Stagnation)</option>
+                <option value="meritocratic">Open Meritocracy (High Exit Mobility)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Parameter Sliders -->
+          <div class="control-box">
+            <label class="box-title">Model Parameters</label>
+            <div class="param-slider">
+              <div class="slider-header">
+                <span>Group Size (N):</span>
+                <span id="val-agents">16</span>
+              </div>
+              <input type="range" id="param-agents" min="6" max="28" value="16">
+            </div>
+
+            <div class="param-slider">
+              <div class="slider-header">
+                <span>Conformity Pressure ($eta$):</span>
+                <span id="val-conformity">0.80</span>
+              </div>
+              <input type="range" id="param-conformity" min="0.1" max="1.0" step="0.05" value="0.80">
+            </div>
+
+            <div class="param-slider">
+              <div class="slider-header">
+                <span>Envy & Hostility ($e$):</span>
+                <span id="val-envy">0.70</span>
+              </div>
+              <input type="range" id="param-envy" min="0.1" max="1.0" step="0.05" value="0.70">
+            </div>
+
+            <div class="param-slider">
+              <div class="slider-header">
+                <span>Outlier Striving Delta ($\Delta$):</span>
+                <span id="val-delta">0.90</span>
+              </div>
+              <input type="range" id="param-delta" min="0.2" max="1.5" step="0.05" value="0.90">
+            </div>
+          </div>
+
+          <!-- Live Graphs -->
+          <div class="control-box">
+            <label class="box-title">Real-Time Telemetry</label>
+            <div class="chart-wrapper">
+              <span class="chart-title">Schachter Communication Surge $C(t)$</span>
+              <canvas id="chartSchachter" width="300" height="90"></canvas>
+            </div>
+            <div class="chart-wrapper mt-2">
+              <span class="chart-title">dACC Neurological Pain Index $\mathcal{N}_{	ext{stress}}(t)$</span>
+              <canvas id="chartDacc" width="300" height="90"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Phase Matrix Section -->
+    <section id="matrix" class="content-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-num">02</span>
+          <h2>The 5-Phase Social Friction Matrix</h2>
+        </div>
+        <p class="section-desc">The algorithmic sequence through which high-friction micro-communities neutralize non-conformist actors.</p>
+      </div>
+
+      <div class="matrix-grid">
+        <div class="matrix-card">
+          <div class="matrix-card-header phase-1-border">
+            <span class="phase-chip">FAZ 1</span>
+            <h3>Radar: Deviation Detection</h3>
+          </div>
+          <div class="matrix-body">
+            <p class="quote">"Why are you pushing so hard? The pass grade is fixed anyway."</p>
+            <ul class="matrix-points">
+              <li><strong>Target:</strong> Detect deviation and signal the minimum comfort boundary.</li>
+              <li><strong>Mechanism:</strong> Friendly inquiry masking subtle norm-enforcement.</li>
+              <li><strong>Counter-Stance:</strong> Calm persistence; avoid entering philosophical debates.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-card-header phase-2-border">
+            <span class="phase-chip">FAZ 2</span>
+            <h3>Ridicule: Banter & Caricature</h3>
+          </div>
+          <div class="matrix-body">
+            <p class="quote">"Look at our genius saving the department again!"</p>
+            <ul class="matrix-points">
+              <li><strong>Target:</strong> Erode the outlier's self-esteem and drag standards to the mean.</li>
+              <li><strong>Mechanism:</strong> Sarcastic jokes framed as playful camaraderie.</li>
+              <li><strong>Counter-Stance:</strong> Complete non-defensiveness; refuse to explain or justify.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-card-header phase-3-border">
+            <span class="phase-chip">FAZ 3</span>
+            <h3>Cabal: Alliance & Gossip</h3>
+          </div>
+          <div class="matrix-body">
+            <p class="quote">"There's something off about them lately... they think they're better."</p>
+            <ul class="matrix-points">
+              <li><strong>Target:</strong> Unify the ingroup against the outlier through mutual validation.</li>
+              <li><strong>Mechanism:</strong> Backchannel whisper networks and character devaluation.</li>
+              <li><strong>Counter-Stance:</strong> Cut emotional dependencies; secure confidential data channels.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-card-header phase-4-border">
+            <span class="phase-chip">FAZ 4</span>
+            <h3>Isolation: Silent Ostracism</h3>
+          </div>
+          <div class="matrix-body">
+            <p class="quote">*(Conversations abruptly stop upon entry; dropped eye contact)*</p>
+            <ul class="matrix-points">
+              <li><strong>Target:</strong> Erase the outlier ontologically; trigger dACC neurological pain.</li>
+              <li><strong>Mechanism:</strong> Total information blackout and collective communicative silence.</li>
+              <li><strong>Counter-Stance:</strong> Zero emotional reaction; invest 100% of bandwidth into external ecosystems.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-card-header phase-5-border">
+            <span class="phase-chip">FAZ 5</span>
+            <h3>Liquidation: Exit or Assimilation</h3>
+          </div>
+          <div class="matrix-body">
+            <p class="quote">"They were never a fit for our culture anyway."</p>
+            <ul class="matrix-points">
+              <li><strong>Target:</strong> Permanently eliminate the psychological threat of the mirror.</li>
+              <li><strong>Mechanism:</strong> Outlier departs or undergoes complete cognitive capitulation.</li>
+              <li><strong>Counter-Stance:</strong> Hirschman Strategic Exit: Leap to a high-mobility macro-market.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Game Theory Section -->
+    <section id="gametheory" class="content-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-num">03</span>
+          <h2>Game Theory of Mediocrity Consensus</h2>
+        </div>
+        <p class="section-desc">Formal payoff matrices and Evolutionary Stable Strategies (ESS) in closed institutional basins.</p>
+      </div>
+
+      <div class="game-theory-layout">
+        <div class="game-matrix-card">
+          <h3>2&times;2 Strategic Form: Closed Basin Game</h3>
+          <div class="matrix-table-wrap">
+            <table class="game-table">
+              <thead>
+                <tr>
+                  <th>Ingroup Peer \ Outlier</th>
+                  <th>Conform ($C$)</th>
+                  <th>Strive ($S$)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="row-c">
+                  <th>Conform ($C$)</th>
+                  <td id="cell-cc" class="highlight-nash">
+                    <span class="payoff-p1">$a = +2.5$</span>, <span class="payoff-p2">$a = +2.5$</span>
+                    <div class="cell-label">Mediocrity Trap (Nash Eq)</div>
+                  </td>
+                  <td id="cell-cs">
+                    <span class="payoff-p1">$a - e = -1.0$</span>, <span class="payoff-p2">$r - c - p = -1.0$</span>
+                    <div class="cell-label">Punished Outlier</div>
+                  </td>
+                </tr>
+                <tr id="row-s">
+                  <th>Strive ($S$)</th>
+                  <td id="cell-sc">
+                    <span class="payoff-p1">$r - c - p = -1.0$</span>, <span class="payoff-p2">$a - e = -1.0$</span>
+                    <div class="cell-label">Peer Friction</div>
+                  </td>
+                  <td id="cell-ss">
+                    <span class="payoff-p1">$r - c = +3.0$</span>, <span class="payoff-p2">$r - c = +3.0$</span>
+                    <div class="cell-label">Collective Excellence</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="nash-summary-box">
+            <strong>Theoretical Finding:</strong> When institutional reward mobility is low and peer punishment $p$ exceeds individual striving gain $(r - c)$, the <em>Mediocrity Consensus $(C, C)$</em> is the unique Evolutionarily Stable Strategy (ESS).
+          </div>
+        </div>
+
+        <div class="game-params-card">
+          <h3>Payoff Parameters</h3>
+          <div class="param-slider">
+            <div class="slider-header">
+              <span>Comfort of Mediocrity ($a$):</span>
+              <span id="gt-val-a">2.5</span>
+            </div>
+            <input type="range" id="gt-param-a" min="0.5" max="5.0" step="0.5" value="2.5">
+          </div>
+
+          <div class="param-slider">
+            <div class="slider-header">
+              <span>Individual Merit Reward ($r$):</span>
+              <span id="gt-val-r">5.0</span>
+            </div>
+            <input type="range" id="gt-param-r" min="1.0" max="10.0" step="0.5" value="5.0">
+          </div>
+
+          <div class="param-slider">
+            <div class="slider-header">
+              <span>Effort Cost ($c$):</span>
+              <span id="gt-val-c">2.0</span>
+            </div>
+            <input type="range" id="gt-param-c" min="0.5" max="4.0" step="0.5" value="2.0">
+          </div>
+
+          <div class="param-slider">
+            <div class="slider-header">
+              <span>Peer Punishment & Mobbing ($p$):</span>
+              <span id="gt-val-p">4.0</span>
+            </div>
+            <input type="range" id="gt-param-p" min="0.0" max="8.0" step="0.5" value="4.0">
+          </div>
+
+          <div class="param-slider">
+            <div class="slider-header">
+              <span>Peer Envy Cost ($e$):</span>
+              <span id="gt-val-e">3.5</span>
+            </div>
+            <input type="range" id="gt-param-e" min="0.5" max="6.0" step="0.5" value="3.5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OFI Diagnostic Section -->
+    <section id="ofi" class="content-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-num">04</span>
+          <h2>Outlier Friction Index (OFI) Calculator</h2>
+        </div>
+        <p class="section-desc">Assess the latent toxicity, peer friction, and ostracism risk of your current micro-environment.</p>
+      </div>
+
+      <div class="ofi-container">
+        <div class="ofi-form-box">
+          <form id="ofi-form">
+            <div class="question-list" id="questions-container">
+              <!-- Dynamically populated via JS -->
+            </div>
+            <button type="button" id="btn-calc-ofi" class="btn-primary full-width mt-3">Calculate My Friction Index &rarr;</button>
+          </form>
+        </div>
+
+        <div class="ofi-results-box" id="ofi-results">
+          <div class="score-circle-wrap">
+            <div class="score-circle" id="score-circle">
+              <span class="score-num" id="ofi-score-display">--</span>
+              <span class="score-max">/ 50</span>
+            </div>
+            <div class="score-status" id="ofi-status-display">Complete the assessment</div>
+          </div>
+
+          <div class="strategy-output-card" id="ofi-strategy-card">
+            <h4>Strategic Recommendation (Hirschman Doctrine)</h4>
+            <p id="ofi-strategy-text">Answer the 10 diagnostic questions on the left to receive customized game-theoretic recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Monograph Reader Section -->
+    <section id="monograph" class="content-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-num">05</span>
+          <h2>Academic Monograph & Theoretical Foundations</h2>
+        </div>
+        <p class="section-desc">Full multidisciplinary treatise drawing from Durkheim, Asch, Schachter, Marques, Williams, Eisenberger, and Hirschman.</p>
+      </div>
+
+      <div class="monograph-reader-card">
+        <div class="monograph-controls">
+          <button id="btn-mono-tr" class="btn-tab active">Türkçe Metin</button>
+          <button id="btn-mono-en" class="btn-tab">English Whitepaper</button>
+          <button id="btn-copy-bib" class="btn-tab">&#128203; Copy BibTeX</button>
+        </div>
+        <article class="monograph-article" id="monograph-text">
+          <!-- Monograph rendered here -->
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>The Outlier Friction — Open Source Multidisciplinary Research Platform.</p>
+      <p>MIT License &bull; <a href="https://github.com/arch-yunus/the-outlier-friction" target="_blank">GitHub Repository</a> &bull; 2026</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

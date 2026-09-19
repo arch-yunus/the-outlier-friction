@@ -1,0 +1,7 @@
+﻿__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+sim_results.json
+.DS_Store
+Thumbs.db
